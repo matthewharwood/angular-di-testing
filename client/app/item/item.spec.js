@@ -1,16 +1,19 @@
-// import { Injector } from 'angular2/di';
-// import Item from '../item/item';
+import { Injector } from 'angular2/di';
+import Item from '../item/item';
 
-// describe('Item list:', ()=>{
-// 	var item;
-// 	beforeEach( ()=>{
-// 		var injector = Injector.resolveAndCreate([
-// 		  Item
-// 		]);
-// 		todo = injector.get(Todo);
-// 		console.log(todo);
-// 	});
-// 	it('expect Todo to be present', () =>{
-// 		expect(todo).not.toBe(null);
-//     });
-// });
+describe('Item Class:', ()=>{
+	var item;
+	beforeEach( ()=>{
+		var injector = Injector.resolveAndCreate([
+
+		  Item
+		]);
+		item = injector.get(Item);		
+	});
+	it('expect Item to be present', () =>{
+		console.log(item);
+		expect(item).not.toBe(null);
+		
+    });
+	
+});

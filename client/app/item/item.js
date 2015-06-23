@@ -1,4 +1,7 @@
 "use strict";
+import Reflect from 'reflect-metadata';
+
+import { Injector } from 'angular2/di';
 
 
 class Item{
@@ -10,7 +13,7 @@ class Item{
 		return this.title;
 	}
 	setTitle(val){
-		this.title = val
+		this.title = val;
 	}
 
 }
